@@ -116,6 +116,12 @@
 #define dSv_event_c__onEventBit_addr 0x8005a924
 #define dSv_event_c__offEventBit_addr 0x8005a93c
 
+/* d_save_info */
+
+#define dSv_info_c__isSwitch_addr 0x8005ab80
+#define dSv_info_c__onSwitch_addr 0x8005aa28
+#define dSv_info_c__offSwitch_addr 0x8005aad4
+
 /* d_stage */
 #define dStage_roomControl_c__mStayNo_addr 0x803e9f48
 

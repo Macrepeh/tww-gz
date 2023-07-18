@@ -434,4 +434,16 @@ inline void dComIfGs_offEventBit(uint16_t flag) {
     dSv_event_c__offEventBit(&g_dComIfG_gameInfo.info.mSavedata.mEvent, flag);
 }
 
+inline bool dComIfGs_isSwitch(int switchNo, int roomNo) {
+    return dSv_info_c__isSwitch(&g_dComIfG_gameInfo.info, switchNo, roomNo);
+}
+
+inline void dComIfGs_onSwitch(int switchNo, int roomNo) {
+    dSv_info_c__onSwitch(&g_dComIfG_gameInfo.info, switchNo, roomNo);
+}
+
+inline void dComIfGs_offSwitch(int switchNo, int roomNo) {
+    dSv_info_c__offSwitch(&g_dComIfG_gameInfo.info, switchNo, roomNo);
+}
+
 #endif /* D_COM_D_COM_INF_GAME_H */

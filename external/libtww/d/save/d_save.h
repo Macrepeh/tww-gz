@@ -586,4 +586,13 @@ typedef void (*dSv_player_return_place_c__set_t)(void* _this, char const* i_name
 #define dSv_player_return_place_c__set                                                             \
     ((dSv_player_return_place_c__set_t)dSv_player_return_place_c__set_addr)
 
+typedef bool (*dSv_info_c__isSwitch)(void* addr, uint16_t switchNo, uint16_t roomNo);
+#define dSv_info_c__isSwitch ((dSv_info_c__isSwitch) dSv_info_c__isSwitch_addr)
+
+typedef void (*dSv_info_c__onSwitch)(void* addr, uint16_t switchNo, uint16_t roomNo);
+#define dSv_info_c__onSwitch ((dSv_info_c__onSwitch)dSv_info_c__onSwitch_addr)
+
+typedef void (*dSv_info_c__offSwitch)(void* addr, uint16_t switchNo, uint16_t roomNo);
+#define dSv_info_c__offSwitch ((dSv_info_c__offSwitch)dSv_info_c__offSwitch_addr)
+
 #endif /* D_SAVE_D_SAVE_H */
